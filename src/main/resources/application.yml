@@ -44,6 +44,10 @@ logging:
 server:
   port: 8501
 
+feign:
+  hystrix:
+    enabled: true # 开启Feign熔断
+
 
 #security:
     #oauth2:

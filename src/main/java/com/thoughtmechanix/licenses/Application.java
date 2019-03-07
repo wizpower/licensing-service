@@ -13,6 +13,7 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 /*import org.springframework.cloud.sleuth.Sampler;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;*/
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +29,7 @@ import java.util.List;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-
+@EnableFeignClients
 @EnableResourceServer
 @EnableBinding(Sink.class)
 public class Application {
