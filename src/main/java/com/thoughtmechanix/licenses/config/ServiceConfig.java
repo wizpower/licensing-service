@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceConfig {
 
-    @Value("${example.property}")
-    private String exampleProperty = "";
-
     @Value("${redis.server}")
     private String redisServer = "";
 
@@ -17,10 +14,6 @@ public class ServiceConfig {
 
     @Value("${signing.key}")
     private String jwtSigningKey = "";
-
-    public String getExampleProperty() {
-        return exampleProperty;
-    }
 
     public String getRedisServer() {
         return redisServer;
